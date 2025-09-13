@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+  
+    <style>
+       
+       
+
+
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#080606
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-color: #d39ceb;
+    font-size: larger;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+ h1 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #333;
+}
+
+ a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 2px 2px;
+    font-weight: bold;
+    color: #007bff;
+    transition: all 0.3s ease;
+    padding-top: 2px;
+    margin-top: 2px;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+
+div {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+    </style>
+   
+</head>
+<body>
+
+
+    <div>
+
+           <h1 >Welcome</h1>
+
+               <a href="{{ url_for('signup') }}">Sign Up</a> ||
+               <a href="{{ url_for('login') }}">Sign In</a> ||
+               <a href="{{ url_for('dashboard') }}">Dashboard</a>
+       
+
+    </div>
+    
+</body>
+</html>
